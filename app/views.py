@@ -10,4 +10,6 @@ def index():
     """
     Handler for the index route.
     """
-    return render_template('index.html',title = "Home")
+    popular = ['Boring Emoji movie','Everyone Loves Groot', 'The Mummy movie should be killed and mummified', 'Another Fast 7 movie']
+
+    return render_template('index.html',title = "Home",popular = popular)
