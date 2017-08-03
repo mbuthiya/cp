@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Head content -->
+    {% block head%}
+    <meta charset="utf-8">
+    <!-- Title content -->
+      {% block title%}
+        {% if title %}
+          <title>{{ title }}</title>
+        {% else %}
+          <title>The couch potato blog</title>
+        {% endif %}
+      {% endblock %}
+      <!-- End of title content -->
+    {% endblock %}
+    <!-- End of head content -->
+  </head>
+  <body>
+    <!-- body content -->
+    {% block content%}
+
+    {% endblock %}
+
+    <!-- End of body content -->
+
+  </body>
+</html>
