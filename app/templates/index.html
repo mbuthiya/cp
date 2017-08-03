@@ -2,8 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    {% if title %}
     <title>{{ title }}</title>
+    {% else %}
+    <title>The couch potato blog</title>
+    {% endif %}
   </head>
+
   <body>
     <!-- content  -->
   <h1>Hello World</h1>
