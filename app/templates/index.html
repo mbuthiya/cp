@@ -1,4 +1,5 @@
 {% extends 'base.html'%}
+{% import 'macros.html' as macro%}
 
 <!-- Head content  -->
 {% block head%}
@@ -11,10 +12,12 @@
   <h1>Hello World</h1>
 
 <!-- Poular blogs list -->
-  {% for popular_blog in popular_blogs%}
+<h2>Top Poular</h2>
+{{ macro.display_blog_titles(popular_blogs) }}
 
-    <li>{{ popular_blog }}</li>
+<!-- Scandal posts -->
+<h2>Top Scandals</h2>
+{{ macro.display_blog_titles(scandal_blogs) }}
 
-  {% endfor %}
 
 {% endblock %}
