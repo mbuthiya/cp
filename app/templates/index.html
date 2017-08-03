@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>The couch potato blog</title>
-    {% endif %}
-  </head>
+{% extends 'base.html'%}
 
-  <body>
-    <!-- content  -->
+<!-- Head content  -->
+{% block head%}
+  {{ super() }}
+{% endblock %}
+
+<!-- Body content  -->
+{% block content %}
+
   <h1>Hello World</h1>
-  </body>
-</html>
+
+{% endblock %}
