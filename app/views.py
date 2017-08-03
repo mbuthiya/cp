@@ -10,6 +10,9 @@ def index():
     """
     Handler for the index route.
     """
+    # popular blog list
     popular_blogs = ['Boring Emoji movie','Everyone Loves Groot', 'The Mummy movie should be killed and mummified', 'Another Fast 7 movie']
+    # Scandal blog list
+    scandal_blogs = ['Did Jk Rowling do it?', 'The Oj Simpson Story','Mother of dragons fryer of eggs']
 
-    return render_template('index.html',title = "Home",popular_blogs = popular_blogs)
+    return render_template('index.html',title = "Home",popular_blogs = popular_blogs,scandal_blogs = scandal_blogs)
