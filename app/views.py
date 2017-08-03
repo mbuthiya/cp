@@ -10,4 +10,4 @@ def index():
     """
     Handler for the index route.
     """
-    return render_template('index.html')
+    return render_template('index.html',title = "Home")
