@@ -1,3 +1,4 @@
+#!virtual/bin/python3.6
 """
 Module that is executed and starts up the flask server
 """
