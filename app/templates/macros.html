@@ -1,0 +1,7 @@
+{% macro display_blog_titles(titles_list)%}
+  <ul>
+      {% for title in titles_list %}
+      <li>{{ title }}</li>
+      {% endfor %}
+  </ul>
+  {% endmacro %}
