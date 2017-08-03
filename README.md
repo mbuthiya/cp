@@ -4,20 +4,34 @@ A simple blogging application that allows users to read or write blogs about a m
 ### Technology as of now
 
 1. Python3.6
+2. flask
 
 
 ### Installations
 
-#### Virtual Environment
+#### Create Virtual Environment
 
 ```bash
 $ python3.6 -m venv virtual
 ```
 
-#### Modules used
+#### Install Modules used
 ```bash
 $ python3.6 -m pip install -r requirements.txt
 ```
+
+### Running the Program
+
+1. First run chmod command in your terminal to make the file executable.
+
+```bash
+$ chmod a+x run.py
+```
+2. Run file
+```bash
+$ ./run.py
+```
+3. Open in browser at _http://127.0.0.1:5000/_
 
 
 ### License
