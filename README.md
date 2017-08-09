@@ -5,6 +5,7 @@ A simple blogging application that allows users to read or write blogs about a m
 
 1. Python3.6
 2. flask
+3. Heroku
 
 
 ### Installations
@@ -33,6 +34,9 @@ $ ./run.py
 ```
 3. Open in browser at _http://127.0.0.1:5000/_
 
+### Deployed site
+
+Here is the link to the deployed website https://couch-p.herokuapp.com/
 
 ### License
 This project is under the [MIT](https://opensource.org/licenses/MIT) License.
