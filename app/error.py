@@ -2,16 +2,17 @@ from flask import render_template
 from app import app
 
 @app.errorhandler(404)
-def not_found():
+def not_found(e):
     '''
     Returns a custom error page for any 400 server errors encountered
     '''
-    return render_template('404.html'),404
+    title = 'page not found'
+    return render_template('404.html',title=title),404
 
 @app.errorhandler(500)
-def server_error():
+def server_error(e):
     '''
     Returns a custom error page for any 500 server errors encountered
     '''
-
-    return render_template('500.html'),500
+    title = 'Server error'
+    return render_template('500.html',title=title),500
