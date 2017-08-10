@@ -1,23 +1,22 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
-<!-- Head content  -->
-{% block head%}
-  {{ super() }}
-{% endblock %}
 
 <!-- Body content  -->
 {% block content %}
 
-  <h1>Hello World</h1>
+<div class="container-fluid">
 
-<!-- Poular blogs list -->
-<h2>Top Poular</h2>
-{{ macro.display_blog_titles(popular_blogs) }}
+  <div class="row popular-blogs">
+    <h2>Top Poular</h2>
+    {{ macro.display_blog_titles(popular_blogs) }}
+  </div>
 
-<!-- Scandal posts -->
-<h2>Top Scandals</h2>
-{{ macro.display_blog_titles(scandal_blogs) }}
+  <div class="row scandal-blogs">
+    <h2>Top Scandals</h2>
+    {{ macro.display_blog_titles(scandal_blogs) }}
+  </div>
 
+</div>
 
 {% endblock %}
