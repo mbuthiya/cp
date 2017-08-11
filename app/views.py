@@ -24,7 +24,7 @@ def movies():
     View function that returns movie blogs
     '''
     title ='movies'
-    return render_template('movies.html' title =title)
+    return render_template('movies.html', title=title)
 
 
 
@@ -34,7 +34,7 @@ def shows():
     View function that returns tvshow blogs
     '''
     title ='shows'
-    return render_template('shows.html' title =title)
+    return render_template('shows.html', title=title)
 
 
 
@@ -45,7 +45,7 @@ def news():
     '''
 
     title ='news'
-    return render_template('news.html' title =title)
+    return render_template('news.html', title =title)
 
 
 @app.route('/login')
@@ -54,7 +54,7 @@ def login():
     View function that returns a login form
     '''
     title = 'login'
-    return render_template('login.html' title =title)
+    return render_template('login.html', title =title)
 
 
 @app.route('/signup')
@@ -63,4 +63,4 @@ def signup():
     View function that returns a signup form
     '''
     title ='signup'
-    return render_template('signup.html' title =title)
+    return render_template('signup.html', title =title)
